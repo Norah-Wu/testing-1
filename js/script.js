@@ -6,15 +6,18 @@ hero.setAttribute('aria-labelledby', 'page-title');
 
 const title = document.createElement('h1');
 title.id = 'page-title';
+title.className = 'hero-title';
 title.textContent = 'Hello Codex!';
 
 const description = document.createElement('p');
-description.textContent = 'Step into a polished glassmorphism experience with luminous gradients, animated color orbs, and a bold call-to-action built for first impressions.';
+description.className = 'hero-copy';
+description.textContent = 'A simple, polished landing page rendered with JavaScript and mounted into one root container.';
 
 const actions = document.createElement('div');
-actions.className = 'actions';
+actions.className = 'hero-actions';
 
 const startButton = document.createElement('button');
+startButton.className = 'hero-button';
 startButton.type = 'button';
 startButton.textContent = 'Start';
 
